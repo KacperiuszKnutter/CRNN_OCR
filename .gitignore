@@ -1,0 +1,45 @@
+# Do repozytorium trafia tylko: README.md, .gitignore, GUI/, code/, photos/
+# wszystko inne w katalogu głównym jest ignorowane (dataset, zipy, sprawozdania, .idea, ...)
+/*
+!/.gitignore
+!/README.md
+!/GUI/
+!/code/
+!/photos/
+
+# dane - tworzone skryptami z code/
+dataset/
+
+# wytrenowane modele (checkpointy) i pliki z treningu
+code/train/checkpoints*/
+*.pth
+*.pt
+*.onnx
+test_results.json
+
+# fonty systemowe Windows - licencja nie pozwala ich rozpowszechniać
+code/fonts/
+
+# kopia plików sprzed zmian
+code/_backup_przed_zmianami/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# IDE i system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# wyniki debugowania / archiwa
+debug*/
+*.debug.png
+*.zip
+
+# bez notebooka
+/notebooks/

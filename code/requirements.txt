@@ -1,0 +1,15 @@
+# model / trening (na Colabie torch jest już zainstalowany - pip go nie ruszy)
+torch>=2.3
+numpy>=1.24
+opencv-python>=4.8
+PyYAML>=6.0
+matplotlib>=3.7
+
+# generowanie i pobieranie danych
+Pillow>=10.0
+fonttools>=4.40
+datasets>=2.14
+pypdf>=3.0
+
+# GUI (notatka PDF)
+reportlab>=4.0
